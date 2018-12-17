@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BBDD175-3372-48DD-A533-22C093737440}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CTimer</RootNamespace>
+    <AssemblyName>CTimer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Clock-ice.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\txtAutoSelect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtBInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtBITelefone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtID.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtMoeda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtQuantidade.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmAddProjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmAddProjetos.Designer.cs">
+      <DependentUpon>frmAddProjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmAddTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmAddTarefas.Designer.cs">
+      <DependentUpon>frmAddTarefas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmAddClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmAddClientes.Designer.cs">
+      <DependentUpon>frmAddClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmFaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmFaturas.Designer.cs">
+      <DependentUpon>frmFaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmFatura.Designer.cs">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmFaturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmFaturar.Designer.cs">
+      <DependentUpon>frmFaturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmProjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmProjetos.Designer.cs">
+      <DependentUpon>frmProjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTimer.Designer.cs">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmAddProjetos.resx">
+      <DependentUpon>frmAddProjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmAddTarefas.resx">
+      <DependentUpon>frmAddTarefas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmAddClientes.resx">
+      <DependentUpon>frmAddClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmFaturas.resx">
+      <DependentUpon>frmFaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmFatura.resx">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmFaturar.resx">
+      <DependentUpon>frmFaturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmProjetos.resx">
+      <DependentUpon>frmProjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTimer.resx">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CodeX.iTrabalho.datasource" />
+    <None Include="Properties\DataSources\CTimer.forms.frmFatura.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeX\CodeX.csproj">
+      <Project>{e8000563-f6ca-48d7-80a2-f6481ddc56f5}</Project>
+      <Name>CodeX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{80a9e5f8-611e-4deb-9d87-0a27d1511046}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Clock-ice.ico" />
+    <Content Include="CTimer.ico" />
+    <Content Include="forms\Cronometro.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

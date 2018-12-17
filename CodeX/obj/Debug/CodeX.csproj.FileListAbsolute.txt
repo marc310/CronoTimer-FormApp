@@ -1,0 +1,10 @@
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\obj\Debug\CodeX.csproj.CoreCompileInputs.cache
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\bin\Debug\CodeX.dll
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\bin\Debug\CodeX.pdb
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\bin\Debug\Database.dll
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\bin\Debug\MySql.Data.dll
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\bin\Debug\Database.pdb
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\obj\Debug\CodeX.csprojAssemblyReference.cache
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\obj\Debug\CodeX.csproj.CopyComplete
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\obj\Debug\CodeX.dll
+D:\Bureau\Desenvolvimento\codexTimer\App\CTimer\CodeX\obj\Debug\CodeX.pdb
