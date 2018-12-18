@@ -41,7 +41,7 @@ somente funcionalidades ok, conta tambem com algumas coisas a fazer...
 # implementar na fatura a cobrança do projeto o app só registra mas nao calcula ainda o preço do projeto
 
 
-Desenvolvido no visual Studio 2017
+Desenvolvido com Visual Studio 2017
 por Marcelo Motta.
 www.marcelomotta.com
 
